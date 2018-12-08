@@ -1,0 +1,116 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://use.fontawesome.com/78044b98ae.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Product Landing Page</title>
+  </head>
+
+  <body>
+
+    <header id="header">
+      <div class="flex-container-top" id="top-menu">
+        <div id="logo">
+          <img class="site-logo" id="header-img" alt="Original Trombones" src="logo.png">
+        </div>
+        <nav id="nav-bar" class="nav-bar">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="#howItWorks" class="nav-link">How It Works</a>
+          <a href="#newsletter" class="nav-link">Newsletter</a>
+
+        </nav>
+    </header>
+
+    <main id="main">
+      <div class="flex-container" id="features">
+        <div class="flex-row product-prop">
+          <div class="flex-col-s"><i class="fa fa-3x fa-fire"></i> </div>
+          <div class="flex-col-l">
+            <h1 class="prop-titles">Premium Materials</h1>
+            <p class="prop-texts">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+          </div>
+        </div>
+        <div class="flex-row product-prop">
+          <div class="flex-col-s"><i class="fa fa-3x fa-truck"></i> </div>
+          <div class="flex-col-l">
+            <h1 class="prop-titles">Fast Shipping</h1>
+            <p class="prop-texts">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+          </div>
+        </div>
+        <div class="flex-row product-prop">
+          <div class="flex-col-s"><i class="fa fa-3x fa-battery-full"></i></div>
+          <div class="flex-col-l">
+            <h1 class="prop-titles">Quality Assurance</h1>
+            <p class="prop-texts">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-prices" id="pricing">
+        <div class="price-box" id="product1">
+          <div class=product-titles>TENOR TROMBONE</div>
+          <div class=product-texts>
+            <p class="strong">$600</p>
+            <p class="product-description"><br>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.<br>
+              <button class="select">SELECT</button>
+          </div>
+        </div>
+        <div class="price-box" id="product2">
+          <div class=product-titles>BASS TROMBONE</div>
+          <div class=product-texts>
+            <p class="strong">$900</p>
+            <p class="product-description"><br>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.<br>
+              <button class="select">SELECT</button>
+          </div>
+        </div>
+        <div class="price-box" id="product3">
+          <div class=product-titles>VALVE TROMBONE</div>
+          <div class=product-texts>
+            <p class="strong">$1200 </p>
+            <p class="product-description"><br>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.<br>
+              <button class="select">SELECT</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-container" id="howItWorks">
+        <p class="how-title"> See our trombones on live action!</p>
+        <iframe id="video" width="600" height="430" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+
+      <div class="flex-container" id="newsletter">
+        <h1 class="mailList-title">Original Trombones NewsLetter</h1>
+        <p class="mailList-text">Please suscribe to hear from us.</p>
+        <form action="addToMailList.php" id="form">
+          <input autofocus type="email" name="email" id="email" class="input-field mail-field" placeholder="Enter your Email" required><br>
+          <input type="submit" value="Suscribe to Original Trombones" id="submit">
+        </form>
+        <p class="mailList-under-text">*Only discount news and product updates. <br>Don't worry, we hate spam as much as you do.<br>
+          You can unsubscribe any time — obviously.</p>
+      </div>
+
+
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+        <li>
+          <a href="#">Terms</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <ul>
+          <p>Copyright 2018, Original Trombones</p>
+    </footer>
+
+  </body>
+
+</html>

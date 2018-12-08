@@ -1,0 +1,466 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*---------------------- My CSS---------------------- */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  font-size: 12px;
+  background-color: #EEE;
+}
+/*-----variables-----*/
+:root{
+  --logo-bg: #D95515;
+  --nav-btn-hover: #D95515;
+  --suscribe-bg-clr: #D95515;
+  --suscribe-txt-clr: #FFF;
+}
+
+/* --------------- Header -----------------*/
+header{
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  background-color: #FFF;
+  top:0;
+  left:0;
+  padding: 0;
+	margin: 0;
+  /* border: 1px solid red; */
+  z-index: 1;
+}
+
+#logo{
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid blue; */
+}
+.site-logo{
+  margin: 0;
+  width: 90%;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--logo-bg);
+}
+.nav-bar{
+  position: relative;
+}
+.nav-link{
+	display: block;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  font-size: 1.3rem;
+  color: var(--nav-btn-hover);
+  font-weight: 600;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/*---------------------- Main -------------------- */
+
+.flex-container{
+  position: relative;
+  width: 100vw;
+	height: 60rem;
+	padding: 10rem 0;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  }
+
+.flex-row{
+    position: relative;
+    width: 100%;
+  }
+.flex-col-s{
+      opacity: 0;
+}
+.flex-col-l{
+      text-align: center;
+      padding: 1rem;
+}
+.prop-titles{
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: left;
+}
+.prop-texts{
+      font-size: 1.5rem;
+      font-weight: 400;
+			line-height: 2.5rem;
+      text-align: left;
+}
+
+.fa-fire, .fa-truck, .fa-battery-full{
+  font-size: 5rem;
+	color: var(--suscribe-bg-clr);
+}
+
+#features {
+  background: #fff;
+  color: #000;
+}
+
+.container-prices{
+  position: relative;
+	width: 100%;
+	height: 25rem;
+  margin: 0 auto;
+  padding: 13rem 0;
+  }
+.price-box{
+	display: block;
+	float: left;
+	margin: 3rem 1rem;
+	width: 100%;
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+}
+.product-titles{
+	flex:1;
+	width: 20rem;
+	border: 1px solid black;
+	color: #black;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+	background: #ddd;
+	padding: 0.5rem .5rem;
+}
+.product-texts{
+	flex:5;
+	background-color: #eee;
+	border: 1px solid black;
+	color: black;
+	width:20rem;
+	padding: 0 .8rem;
+	text-align: center;
+	align-items: center;
+}
+
+.select{
+	background: #F1C40F;
+	border: 1px solid #F1C40F;
+	color: black;
+	font-size: 1.2rem;
+	padding: 1rem 1rem;
+	margin: 1.5rem auto;
+}
+.product-description{
+	font-size: 1.4rem;
+	line-height: 1.5rem;
+	padding: 1rem auto;
+	margin: 1rem;
+}
+
+.strong{
+	font-size: 2rem;
+	font-weight: bolder;
+	padding: 1rem 0 0 0;
+}
+
+#howItWorks{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+	height: 55rem;
+	padding: 15rem 0 0 0;
+}
+.how-title{
+	flex:1;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 600;
+	margin: 0 auto;
+	padding: 0 0 2rem 0;
+	color: var(--suscribe-bg-clr);
+}
+#video{
+	flex:5;
+	margin-bottom: 1rem;
+}
+
+#newsletter {
+  background: var(--suscribe-bg-clr);
+  color: #fff;
+	height: 30rem;
+	padding: 0;
+	margin: 0;
+}
+
+.mailList-title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 1rem 2rem;
+	padding: 1rem 2rem;
+  color: #FFFFFF;
+}
+
+.mailList-text{
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 2rem;
+  color: #FFFFFF;
+}
+#form{
+	width:80%;
+	margin: auto;
+}
+.input-field{
+  margin: 0;
+  width: 100%;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  margin: 2rem auto;
+  border: 3px solid var(--suscribe-txt-clr);
+  background-color: var(--suscribe-txt-clr);
+  color: black;
+  border-radius: 10px;
+
+  }
+  .mail-field{
+    border-radius: 10px;
+  }
+
+.mailList-under-text{
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.5rem;
+  color: var(--suscribe-txt-clr);
+}
+
+#submit{
+  width: 100%;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  border: 3px solid var(--suscribe-txt-clr);
+  background-color: transparent;
+  color: var(--suscribe-txt-clr);
+  border-radius: 10px;
+}
+#submit:hover{
+  border: 3px solid var(--suscribe-bg-clr);
+  background-color: var(--suscribe-txt-clr);
+  color: var(--suscribe-bg-clr);
+  border-radius: 10px;
+}
+
+footer{
+	padding: 5rem;
+  background: #fff;
+  color: black;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 0;
+}
+footer p{
+	line-height: 5rem;
+}
+footer a{
+	text-decoration: none;
+	color: black;
+}
+footer ul{
+	position: relative;
+}
+footer li{
+	display: inline-block;
+	padding: 1rem 2rem;
+}
+
+/* Media Queries*/
+@media(min-width:850px){
+.flex-container-top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  border: 1px solid #aaa;
+  padding-bottom: 0.1rem;
+  }
+	#logo{
+		flex: 3;
+	}
+	.nav-bar{
+	  flex:8;
+		display: flex;
+	  flex-direction: row;
+	  align-items:flex-end;
+	  justify-content:flex-end;
+	}
+	.nav-link{
+	 	  flex:1;
+	}
+	.flex-container{
+	  position: relative;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: space-between;
+		height: 35rem;
+	  }
+
+	.flex-row{
+	    flex:1;
+			max-width:1280px;
+	    display: flex;
+	    flex-direction: row;
+	    align-items: center;
+	    justify-content: space-between;
+	  }
+	.flex-col-s{
+		opacity:1;
+	      flex:1;
+	      text-align: center;
+	      padding: 1rem;
+
+	}
+	.flex-col-l{
+	      flex:5;
+	}
+
+	.container-prices{
+	  display: flex;
+		max-width:1280px;
+		padding: 4rem 0;
+	  }
+		#howItWorks{
+			height: 35rem;
+			padding: 6rem 0 0 0;
+		}
+		#newsletter{
+			padding: 0;
+			margin: 0;
+			width:100%;
+
+		}
+		.mailList-title{
+		  text-align: center;
+		  font-size: 3rem;
+		  font-weight: 600;
+		  margin: 1rem 2rem;
+			padding: 1rem 2rem;
+		  color: #FFFFFF;
+		}
+		#form{
+			width:80%;
+			max-width: 768px;
+		}
+		.mailList-text{
+		  text-align: center;
+		  font-size: 2rem;
+		  margin: 0 auto;
+		  color: #FFFFFF;
+		}
+
+		.input-field{
+		  margin: 0;
+		  width: 100%;
+		  height: 3rem;
+		  padding: 0.5rem 1rem;
+		  font-size: 1.5rem;
+		  margin: 2rem 0;
+		  border: 3px solid var(--suscribe-txt-clr);
+		  background-color: var(--suscribe-txt-clr);
+		  color: black;
+		  border-radius: 10px;
+
+		  }
+		  .mail-field{
+		    border-radius: 10px;
+		  }
+
+		.mailList-under-text{
+		  text-align: center;
+		  font-size: 1.2rem;
+		  padding-bottom: 0.5rem;
+			margin-bottom: 1.5rem;
+			line-height: 1.5rem;
+		  color: var(--suscribe-txt-clr);
+		}
+
+		#submit{
+		  width: 100%;
+		  height: 3rem;
+		  padding: 0.5rem 1rem;
+		  font-size: 1.5rem;
+		  margin: .5rem 0;
+		  border: 3px solid var(--suscribe-txt-clr);
+		  background-color: transparent;
+		  color: var(--suscribe-txt-clr);
+		  border-radius: 10px;
+		}
+		#submit:hover{
+		  border: 3px solid var(--suscribe-bg-clr);
+		  background-color: var(--suscribe-txt-clr);
+		  color: var(--suscribe-bg-clr);
+		  border-radius: 10px;
+		}
+
+
+
+}
